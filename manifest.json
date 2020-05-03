@@ -1,0 +1,42 @@
+{
+	"manifest_version": 2,
+	"name": "ClickjackingDetector",
+	"version": "1.0.1",
+	"description": "clickjacking detector again attack",
+	"icons":{
+		"128": "icon128.png"
+	},
+
+	"browser_action":{
+		"default_icons": "icon128.png",
+		"default_popup": "popup.html"
+	},
+
+	"background":{
+		"scripts": ["eventpage.js"],
+		"persistent": true
+	},
+	"options_page": "options.html",
+	"content_scripts":[
+		{
+		 "matches": ["http://*/*", "https://*/*"],
+         "js": ["content.js", "jquery-3.1.1.min.js"]
+		}
+	],
+
+	"permissions": [
+		"tabs",
+		"https://*/*",
+		"http://*/*",
+		"<all_urls>",
+		"notifications",
+		"http://localhost/*",
+		"https://www.google.ca/*",
+		"contentSettings",
+		"storage",
+        "webRequest",
+		"webNavigation",
+        "webRequestBlocking"
+
+		]
+}
