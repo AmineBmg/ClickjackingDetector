@@ -6,5 +6,5 @@ With ClickjackingDetector, a browser extension on google chrome to defeat attack
 ## Related Paper
 This tool is described in the following paper:
 
-[Paper Title]([https://your-paper-link.com](https://link.springer.com/chapter/10.1007/978-3-030-21009-0_39))
+[Implementation of Web Browser Extension for Mitigating Clickjacking Attack]([https://your-paper-link.com](https://link.springer.com/chapter/10.1007/978-3-030-21009-0_39))
 
